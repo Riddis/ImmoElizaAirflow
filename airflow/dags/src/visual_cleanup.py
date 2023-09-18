@@ -46,24 +46,13 @@ def clean_csv(csv):
     csv['kitchen'] = csv['kitchen'].fillna('NOT_INSTALLED')
     csv['kitchen'] = csv['kitchen'].replace('0', 'NOT_INSTALLED')
     csv['kitchen'] = csv['kitchen'].replace(0, 'NOT_INSTALLED')
-    """csv['kitchen'] = csv['kitchen'].replace('USA_UNINSTALLED', 0)
-    csv['kitchen'] = csv['kitchen'].replace('SEMI_EQUIPPED', 0.5)
-    csv['kitchen'] = csv['kitchen'].replace('USA_SEMI_EQUIPPED', 0.5)
-    csv['kitchen'] = csv['kitchen'].replace('INSTALLED', 1)
-    csv['kitchen'] = csv['kitchen'].replace('USA_INSTALLED', 1)
-    csv['kitchen'] = csv['kitchen'].replace('HYPER_EQUIPPED', 2)
-    csv['kitchen'] = csv['kitchen'].replace('USA_HYPER_EQUIPPED', 2)"""
     # Filling empty values and changing true/false to 1/0
-    csv['furnished'] = csv['furnished'].fillna(0)
-    csv['furnished'] = csv['furnished'].replace(False, 0)
-    csv['furnished'] = csv['furnished'].replace(True, 1)
+    csv['furnished'] = csv['furnished'].fillna(False)
     # Assuming that a NaN value,0 or -1 means no fireplace installed
-    csv['fireplace'] = csv['fireplace'].fillna(0)
-    csv['fireplace'] = csv['fireplace'].replace(-1, 0)
+    csv['fireplace'] = csv['fireplace'].fillna(False)
+    csv['fireplace'] = csv['fireplace'].replace(-1, False)
     # Filling empty values and changing true/false to 1/0
-    csv['terrace'] = csv['terrace'].fillna(0)
-    csv['terrace'] = csv['terrace'].replace(False, 0)
-    csv['terrace'] = csv['terrace'].replace(True, 1)
+    csv['terrace'] = csv['terrace'].fillna(False)
     # Assuming the surface area = living area in case of apartments
     to_replace = csv[((csv['surface_land'] == 'UNKNOWN')|(pd.isna(csv['surface_land']) == True)) & (csv['property_type'] == 'APARTMENT')]
     to_replace = to_replace.reset_index()
@@ -75,20 +64,20 @@ def clean_csv(csv):
     # Dropping rows with no facade info
     csv = csv.drop(csv[(csv['number_facades'] == 'UNKNOWN') | (pd.isna(csv['number_facades']) == True)].index)
     # Filling empty values and changing true/false to 1/0
-    csv['swimming_pool'] = csv['swimming_pool'].fillna(0)
-    csv['swimming_pool'] = csv['swimming_pool'].replace(False, 0)
-    csv['swimming_pool'] = csv['swimming_pool'].replace(True, 1)
+    csv['swimming_pool'] = csv['swimming_pool'].fillna(False)
+    csv['swimming_pool'] = csv['swimming_pool'].replace(0, False)
+    csv['swimming_pool'] = csv['swimming_pool'].replace(1, True)
     csv = csv.drop(csv[(csv['building_state'] == 'UNKNOWN') | (pd.isna(csv['building_state']) == True)].index)
     # If terrace = 1 but no terrace_area present, drop the row
-    csv = csv.drop(csv[(csv['terrace'] == 1) & (pd.isna(csv['terrace_area']) == True)].index)
+    csv = csv.drop(csv[(csv['terrace'] == True) & (pd.isna(csv['terrace_area']) == True)].index)
     # Filling empty values and changing true/false to 1/0
     csv['terrace_area'] = csv['terrace_area'].fillna(0)
     # If garden = 1 but no garden_area present, drop the row
     csv = csv.drop(csv[(csv['garden'] == 1) & (pd.isna(csv['garden_area']) == True)].index)
     # No garden, filling empty values
-    csv['garden'] = csv['garden'].fillna(0)
-    csv['garden'] = csv['garden'].replace(False, 0)
-    csv['garden'] = csv['garden'].replace(True, 1)
+    csv['garden'] = csv['garden'].fillna(False)
+    csv['garden'] = csv['garden'].replace(0, False)
+    csv['garden'] = csv['garden'].replace(1, True)
     csv['garden_area'] = csv['garden_area'].fillna(0)
     # Change strings to floats in certain columns
     csv = csv.drop(csv[(csv['surface_land'] == 0)].index)
@@ -106,14 +95,6 @@ def clean_csv(csv):
     # If we have less than 3 occurences, zipcode will be changed to 'other' so we don't overfit
     filter = csv['zip_code'].value_counts()
     csv['zip_code'] = np.where(csv['zip_code'].isin(filter.index[filter >= 4]), csv['zip_code'], 'other')
-    # Removing outliers
-    cols = ['price', 'number_rooms', 'living_area',
-        'furnished', 'fireplace', 'terrace', 'terrace_area', 'garden',
-        'garden_area', 'surface_land', 'number_facades', 'swimming_pool'] # one or more
-    Q1 = csv[cols].quantile(0.25)
-    Q3 = csv[cols].quantile(0.75)
-    IQR = Q3 - Q1
-    csv = csv[~((csv[cols] < (Q1 - 1.5 * IQR)) |(csv[cols] > (Q3 + 1.5 * IQR))).any(axis=1)]
     csv["digit"]=csv["zip_code"].agg(convert)
 
     return csv
@@ -131,5 +112,3 @@ def clean():
     csv = clean_csv(csv)
     # Save the csv
     save_csv(csv, out_path)
-
-clean()

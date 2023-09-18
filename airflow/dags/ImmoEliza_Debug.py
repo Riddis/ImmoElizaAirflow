@@ -23,9 +23,9 @@ url_path = (cwd / url_path).resolve()
 counters = 1
 
 with DAG(
-    dag_id='ImmoEliza', 
+    dag_id='ImmoEliza_Debug', 
     default_args=default_args,
-    description='ImmoEliza Pipeline', 
+    description='ImmoEliza Pipeline Debug', 
     start_date=datetime(2023, 9, 15, 16), # Year, Month, Day, Hour
     schedule_interval='@daily'
 ) as dag:
@@ -39,7 +39,7 @@ with DAG(
         python_callable=visual_cleanup.clean
     )
 
-    task3 = PythonOperator(
+    """task3 = PythonOperator(
         task_id='clean_data_for_model',
         python_callable=model_cleanup.clean
     )
@@ -48,6 +48,6 @@ with DAG(
         task_id='train_model',
         python_callable=trainmodel.train
     )
-
+"""
     task1>>task2
-    task1>>task3>>task4
+    #task1>>task3>>task4

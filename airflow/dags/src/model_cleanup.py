@@ -106,14 +106,6 @@ def clean_csv(csv):
     # If we have less than 3 occurences, zipcode will be changed to 'other' so we don't overfit
     filter = csv['zip_code'].value_counts()
     csv['zip_code'] = np.where(csv['zip_code'].isin(filter.index[filter >= 4]), csv['zip_code'], 'other')
-    # Removing outliers
-    cols = ['price', 'number_rooms', 'living_area',
-        'furnished', 'fireplace', 'terrace', 'terrace_area', 'garden',
-        'garden_area', 'surface_land', 'number_facades', 'swimming_pool'] # one or more
-    Q1 = csv[cols].quantile(0.25)
-    Q3 = csv[cols].quantile(0.75)
-    IQR = Q3 - Q1
-    csv = csv[~((csv[cols] < (Q1 - 1.5 * IQR)) |(csv[cols] > (Q3 + 1.5 * IQR))).any(axis=1)]
     csv["digit"]=csv["zip_code"].agg(convert)
 
     return csv
@@ -131,5 +123,3 @@ def clean():
     csv = clean_csv(csv)
     # Save the csv
     save_csv(csv, out_path)
-
-clean()

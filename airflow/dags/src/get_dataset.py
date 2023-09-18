@@ -12,7 +12,7 @@ from pathlib import Path
 
 
 # Function to scrape URLs
-def scrape_urls(page_num):
+def scrape_urls(page_num, url_path):
     """Scrapes a listing page for all the listing's URLs and writes the output to '.\data_output\full_list.txt'"""
     # Build the URL and make a soup
     base_url = f"https://www.immoweb.be/en/search/house/for-sale?countries=BE&page={page_num}&orderBy=relevance"
@@ -49,7 +49,7 @@ def thread_scraping(url_path):
 
     # Create and start threads
     for i in range(1, num_pages + 1):
-        t = threading.Thread(target=lambda: full_list_url.extend(scrape_urls(i)))
+        t = threading.Thread(target=lambda: full_list_url.extend(scrape_urls(i, url_path)))
         reporting("Search pages scraped:", i)
         threads.append(t)
         t.start()
@@ -235,11 +235,12 @@ def create_dataframe(csv_path, url_path, counters):
     print("Total time spent scraping:", execution_time, "seconds")
     return df
 
-cwd = Path.cwd()
-csv_path = 'dags/data/dataframe.csv'
-url_path = 'dags/data/full_list.txt'
-csv_path = (cwd / csv_path).resolve()
-url_path = (cwd / url_path).resolve()
-counters = 1
+def fetch():
+    cwd = Path.cwd()
+    csv_path = 'dags/data/dataframe.csv'
+    url_path = 'dags/data/full_list.txt'
+    csv_path = (cwd / csv_path).resolve()
+    url_path = (cwd / url_path).resolve()
+    counters = 1
 
-create_dataframe(csv_path, url_path, counters)
+    create_dataframe(csv_path, url_path, counters)

@@ -1,13 +1,11 @@
-from sklearn.linear_model import LinearRegression
-from sklearn.tree import DecisionTreeRegressor
 from xgboost import XGBRegressor
-from sklearn.linear_model import SGDRegressor
-from sklearn.neural_network import MLPRegressor
 from sklearn.preprocessing import MinMaxScaler, OneHotEncoder
-from sklearn.metrics import mean_squared_error
 from sklearn.model_selection import train_test_split
+from pathlib import Path
+import joblib
 import numpy as np
 import pandas as pd
+
 
 def prep_data(csv):
     """Select which columns to use as features, split the dataset, and scale it"""
@@ -30,43 +28,31 @@ def prep_data(csv):
 
     return X_train, X_test, y_train, y_test, y, scaler, encoder
 
-def train_LinearRegression(X_train, y_train): 
-    """Initializes the model"""
-    return LinearRegression().fit(X_train, y_train)
-
-def train_DecisionTreeRegressor(X_train, y_train): 
-    """Initializes the model"""
-    return DecisionTreeRegressor(criterion='squared_error', max_depth=12, min_weight_fraction_leaf=0.0045).fit(X_train, y_train)
-
 def train_XGBRegressor(X_train, y_train): 
     """Initializes the model"""
     return XGBRegressor(objective ='reg:squarederror', n_estimators = 50, seed = 123).fit(X_train, y_train)
 
-def train_SGDRegressor(X_train, y_train): 
-    """Initializes the model"""
-    return SGDRegressor(max_iter=1000, tol=1e-3).fit(X_train, y_train)
+def build_path():
+    """Builds path to csv locations"""
+    cwd = Path.cwd()
+    csv_cleaned_path = 'dags/data/dataframe_cleaned_model.csv'
+    src_path = (cwd / csv_cleaned_path).resolve()
 
-def train_NeuralNetwork(X_train, y_train): 
-    """Initializes the model"""
-    return MLPRegressor(solver='lbfgs', alpha=1e-5, hidden_layer_sizes=(5, 2), random_state=1, max_iter=10000).fit(X_train, y_train)
+    return src_path
 
-def score(regressor, X_train, X_test, y_train, y_test, y):
-    """Calculates and returns several score metrics (score, rmse, coefficient)"""
-    score_train = regressor.score(X_train, y_train)
-    score_test = regressor.score(X_test, y_test)
+def get_csv(src_path):
+    """Parse the csv located at 'data/dataframe.csv'"""
+    csv = pd.read_csv(src_path, index_col=0)
 
-    # Get the root mean squared error
-    y_pred = regressor.predict(X_test)
-    #rmse = mean_squared_error(y_true=y_test, y_pred=y_pred, squared=False)
-    rmse= np.sqrt(mean_squared_error(y_true=y_test, y_pred=y_pred))
-
-    u = ((y_test - y_pred)**2).sum()
-    v = ((y_test - y.mean())**2).sum()
-    coef_determination = 1 - u/v
-
-    return score_train, score_test, rmse, coef_determination
+    return csv
 
 def train():
-    prep_data(csv)
-    train_XGBRegressor(X_train, y_train)
-    return
+    src_path = build_path()
+    csv = get_csv(src_path)
+    X_train, X_test, y_train, y_test, y, scaler, encoder = prep_data(csv)
+    regressor = train_XGBRegressor(X_train, y_train)
+    regressor.save_model('dags/models/xgbmodel.model')
+    scaler_filename = "dags/models/scaler.save"
+    joblib.dump(scaler, scaler_filename) 
+    encoder_filename = "dags/models/encoder.save"
+    joblib.dump(encoder, encoder_filename)

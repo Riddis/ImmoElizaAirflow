@@ -1,61 +1,61 @@
 ,url,region,province,locality,zip_code,property_type,property_subtype,price,number_rooms,living_area,kitchen,furnished,fireplace,terrace,terrace_area,garden,garden_area,surface_land,number_facades,swimming_pool,building_state
-0,https://www.immoweb.be/en/classified/house/for-sale/oupeye/4682/10821092,Wallonie,Liège,Oupeye,4682,HOUSE,HOUSE,199000.0,4.0,130.0,INSTALLED,False,,,,True,155.0,350,2,False,GOOD
-1,https://www.immoweb.be/en/classified/mixed-use-building/for-sale/herent/3020/10472547,Flanders,Flemish Brabant,Herent,3020,HOUSE,MIXED_USE_BUILDING,359000.0,4.0,348.0,INSTALLED,,-1.0,,,True,128.0,314,2,,GOOD
-2,https://www.immoweb.be/en/classified/house/for-sale/herent/3020/10472546,Flanders,Flemish Brabant,Herent,3020,HOUSE,HOUSE,359000.0,4.0,348.0,INSTALLED,,-1.0,,,True,128.0,314,2,,GOOD
-3,https://www.immoweb.be/en/classified/new-real-estate-project-houses/for-sale/deinze/9800/10820756,Flanders,East Flanders,Deinze,9800,HOUSE_GROUP,HOUSE_GROUP,,,,0,,,,,,,UNKNOWN,UNKNOWN,,UNKNOWN
-4,https://www.immoweb.be/en/classified/new-real-estate-project-houses/for-sale/gent/9030/10820782,Flanders,East Flanders,Gent,9030,HOUSE_GROUP,HOUSE_GROUP,,,,0,,,,,,,UNKNOWN,UNKNOWN,,UNKNOWN
-5,https://www.immoweb.be/en/classified/new-real-estate-project-houses/for-sale/gent/9050/10820774,Flanders,East Flanders,Gent,9050,HOUSE_GROUP,HOUSE_GROUP,,,,0,,,,,,,UNKNOWN,UNKNOWN,,UNKNOWN
-6,https://www.immoweb.be/en/classified/new-real-estate-project-houses/for-sale/berlaar/2590/10820947,Flanders,Antwerp,Berlaar,2590,HOUSE_GROUP,HOUSE_GROUP,,,,0,,,,,,,UNKNOWN,UNKNOWN,,UNKNOWN
-7,https://www.immoweb.be/en/classified/house/for-sale/ronse/9600/10818318,Flanders,East Flanders,Ronse,9600,HOUSE,HOUSE,175000.0,4.0,236.0,INSTALLED,False,,,,True,75.0,200,2,False,TO_RENOVATE
-8,https://www.immoweb.be/en/classified/house/for-sale/vieux-waleffe/4530/10819654,Wallonie,Liège,VIEUX-WALEFFE,4530,HOUSE,HOUSE,299000.0,3.0,210.0,INSTALLED,,-1.0,True,90.0,True,,162,2,,AS_NEW
-9,https://www.immoweb.be/en/classified/house/for-sale/bierbeek/3360/10819803,Flanders,Flemish Brabant,Bierbeek,3360,HOUSE,HOUSE,548000.0,3.0,269.0,HYPER_EQUIPPED,False,,True,,True,900.0,4429,3,False,GOOD
-10,https://www.immoweb.be/en/classified/exceptional-property/for-sale/assebroek/8310/10745663,Flanders,West Flanders,Assebroek,8310,HOUSE,EXCEPTIONAL_PROPERTY,585000.0,6.0,275.0,NOT_INSTALLED,,,,,,,2139,4,,TO_RENOVATE
-11,https://www.immoweb.be/en/classified/house/for-sale/uccle/1180/10792798,Brussels,Brussels,Uccle,1180,HOUSE,HOUSE,595000.0,5.0,230.0,INSTALLED,,1.0,True,11.0,True,43.0,150,2,False,TO_BE_DONE_UP
-12,https://www.immoweb.be/en/classified/house/for-sale/genappe/1470/10815917,Wallonie,Walloon Brabant,Genappe,1470,HOUSE,HOUSE,185000.0,1.0,88.0,SEMI_EQUIPPED,False,,True,10.0,True,50.0,148,2,False,TO_BE_DONE_UP
-13,https://www.immoweb.be/en/classified/house/for-sale/zottegem/9620/10815601,Flanders,East Flanders,Zottegem,9620,HOUSE,HOUSE,189000.0,3.0,160.0,SEMI_EQUIPPED,,,True,15.0,True,50.0,167,2,False,GOOD
-14,https://www.immoweb.be/en/classified/bungalow/for-sale/ans/4432/10815989,Wallonie,Liège,Ans,4432,HOUSE,BUNGALOW,299000.0,3.0,126.0,INSTALLED,False,,True,11.0,True,620.0,984,4,False,GOOD
-15,https://www.immoweb.be/en/classified/new-real-estate-project-houses/for-sale/geraardsbergen%20moerbeke/9500/10815585,Flanders,East Flanders,Geraardsbergen Moerbeke,9500,HOUSE_GROUP,HOUSE_GROUP,,,,0,,,,,,,UNKNOWN,UNKNOWN,,UNKNOWN
-16,https://www.immoweb.be/en/classified/house/for-sale/machelen%20%28vlaams-brabant%29/1830/10816148,Flanders,Flemish Brabant,Machelen (vlaams-brabant),1830,HOUSE,HOUSE,449000.0,4.0,292.0,USA_HYPER_EQUIPPED,False,,True,,True,824.0,955,3,False,TO_RENOVATE
-17,https://www.immoweb.be/en/classified/villa/for-sale/ternat/1740/10816624,Flanders,Flemish Brabant,Ternat,1740,HOUSE,VILLA,595000.0,5.0,356.0,USA_HYPER_EQUIPPED,,,True,80.0,True,6000.0,8000,4,False,AS_NEW
-18,https://www.immoweb.be/en/classified/house/for-sale/dendermonde/9200/10813096,Flanders,East Flanders,Dendermonde,9200,HOUSE,HOUSE,275000.0,4.0,163.0,HYPER_EQUIPPED,,,True,,True,50.0,134,2,False,GOOD
-19,https://www.immoweb.be/en/classified/house/for-sale/herzele/9550/10813103,Flanders,East Flanders,Herzele,9550,HOUSE,HOUSE,295000.0,3.0,150.0,INSTALLED,,,True,,,,247,2,False,AS_NEW
-20,https://www.immoweb.be/en/classified/house/for-sale/wanze/4520/10813900,Wallonie,Liège,Wanze,4520,HOUSE,HOUSE,299500.0,4.0,133.0,INSTALLED,,-1.0,True,25.0,True,400.0,503,4,,AS_NEW
-21,https://www.immoweb.be/en/classified/house/for-sale/mechelen/2800/10813495,Flanders,Antwerp,Mechelen,2800,HOUSE,HOUSE,315000.0,2.0,172.0,INSTALLED,,,True,,,,189,2,False,GOOD
-22,https://www.immoweb.be/en/classified/house/for-sale/leuven%20heverlee/3001/10814710,Flanders,Flemish Brabant,Leuven Heverlee,3001,HOUSE,HOUSE,584000.0,7.0,243.0,INSTALLED,False,,True,12.0,True,350.0,826,4,False,TO_BE_DONE_UP
-23,https://www.immoweb.be/en/classified/apartment-block/for-sale/jette/1090/10813472,Brussels,Brussels,Jette,1090,HOUSE,APARTMENT_BLOCK,1995000.0,14.0,850.0,HYPER_EQUIPPED,False,,True,15.0,True,100.0,260,2,False,GOOD
-24,https://www.immoweb.be/en/classified/house/for-sale/vresse-sur-semois/5550/10810366,Wallonie,Namur,Vresse-sur-Semois,5550,HOUSE,HOUSE,129000.0,3.0,124.0,SEMI_EQUIPPED,False,,True,5.0,,,409,3,False,GOOD
-25,https://www.immoweb.be/en/classified/new-real-estate-project-houses/for-sale/fleurus/6220/10811535,Wallonie,Hainaut,Fleurus,6220,HOUSE_GROUP,HOUSE_GROUP,,,,0,,,,,,,UNKNOWN,UNKNOWN,,UNKNOWN
-26,https://www.immoweb.be/en/classified/house/for-sale/hotton/6990/10810459,Wallonie,Luxembourg,Hotton,6990,HOUSE,HOUSE,248000.0,6.0,290.0,INSTALLED,False,,True,30.0,True,1230.0,1230,3,False,GOOD
-27,https://www.immoweb.be/en/classified/house/for-sale/linter%20wommersom/3350/10812017,Flanders,Flemish Brabant,Linter Wommersom,3350,HOUSE,HOUSE,329000.0,3.0,151.0,INSTALLED,False,,True,30.0,True,3200.0,3537,4,False,TO_BE_DONE_UP
-28,https://www.immoweb.be/en/classified/house/for-sale/ethe/6760/10620375,Wallonie,Luxembourg,ETHE,6760,HOUSE,HOUSE,120000.0,4.0,140.0,SEMI_EQUIPPED,,-1.0,,,True,,186,3,,TO_RENOVATE
-29,https://www.immoweb.be/en/classified/new-real-estate-project-houses/for-sale/torhout/8820/10810186,Flanders,West Flanders,Torhout,8820,HOUSE_GROUP,HOUSE_GROUP,,,,0,,,,,,,UNKNOWN,UNKNOWN,,UNKNOWN
-30,https://www.immoweb.be/en/classified/house/for-sale/bastogne/6600/10822165,Wallonie,Luxembourg,Bastogne,6600,HOUSE,HOUSE,500000.0,5.0,263.0,0,False,,,,,,670,3,False,
-31,https://www.immoweb.be/en/classified/house/for-sale/dendermonde/9200/10822160,Flanders,East Flanders,Dendermonde,9200,HOUSE,HOUSE,275000.0,3.0,165.0,,False,,,,True,123.0,277,2,False,JUST_RENOVATED
-32,https://www.immoweb.be/en/classified/apartment/for-sale/chimay/6460/10822158,Wallonie,Hainaut,Chimay,6460,APARTMENT,APARTMENT,357700.0,3.0,109.0,0,False,,True,13.0,,,UNKNOWN,2,,
-33,https://www.immoweb.be/en/classified/apartment/for-sale/chimay/6460/10822157,Wallonie,Hainaut,Chimay,6460,APARTMENT,APARTMENT,406800.0,3.0,15197.0,0,False,,True,29.0,,,UNKNOWN,2,,
-34,https://www.immoweb.be/en/classified/apartment/for-sale/sint-niklaas/9100/10822156,Flanders,East Flanders,Sint-niklaas,9100,APARTMENT,APARTMENT,349000.0,2.0,100.0,HYPER_EQUIPPED,False,,True,20.0,,,UNKNOWN,2,False,GOOD
-35,https://www.immoweb.be/en/classified/apartment/for-sale/chimay/6460/10822155,Wallonie,Hainaut,Chimay,6460,APARTMENT,APARTMENT,289200.0,2.0,118.0,0,False,,True,22.0,,,UNKNOWN,2,,
-36,https://www.immoweb.be/en/classified/house/for-sale/chimay/6460/10822154,Wallonie,Hainaut,Chimay,6460,HOUSE,HOUSE,272000.0,2.0,148.0,0,False,,True,16.0,True,62.0,208,2,,
-37,https://www.immoweb.be/en/classified/villa/for-sale/hannut/4280/10822149,Wallonie,Liège,HANNUT,4280,HOUSE,VILLA,479000.0,3.0,178.0,,False,,,,,,1387,4,False,
-38,https://www.immoweb.be/en/classified/villa/for-sale/seloignes/6596/10822142,Wallonie,Hainaut,Seloignes,6596,HOUSE,VILLA,225000.0,4.0,100.0,INSTALLED,False,,True,20.0,True,815.0,815,4,False,
-39,https://www.immoweb.be/en/classified/house/for-sale/huy/4500/10822132,Wallonie,Liège,HUY,4500,HOUSE,HOUSE,249000.0,4.0,252.0,,False,,,,,,816,3,False,TO_BE_DONE_UP
-40,https://www.immoweb.be/en/classified/house/for-sale/rochefort/5580/10822131,Wallonie,Namur,Rochefort,5580,HOUSE,HOUSE,175000.0,5.0,163.0,,,,True,46.0,True,332.0,456,2,,TO_RENOVATE
-41,https://www.immoweb.be/en/classified/house/for-sale/marche-en-famenne/6900/10822130,Wallonie,Luxembourg,Marche-en-Famenne,6900,HOUSE,HOUSE,315000.0,4.0,117.0,INSTALLED,False,,True,49.0,True,550.0,630,3,False,GOOD
-42,https://www.immoweb.be/en/classified/duplex/for-sale/jette/1090/10822129,Brussels,Brussels,Jette,1090,APARTMENT,DUPLEX,269000.0,2.0,101.0,,,,,,,,UNKNOWN,,,GOOD
-43,https://www.immoweb.be/en/classified/house/for-sale/wanze/4520/10822128,Wallonie,Liège,Wanze,4520,HOUSE,HOUSE,309000.0,4.0,156.0,,False,,,,,,1521,4,False,
-44,https://www.immoweb.be/en/classified/house/for-sale/pittem/8740/10822127,Flanders,West Flanders,Pittem,8740,HOUSE,HOUSE,329000.0,2.0,113.0,,False,,,,,,309,4,False,GOOD
-45,https://www.immoweb.be/en/classified/apartment/for-sale/bruxelles/1000/10822126,Brussels,Brussels,Bruxelles,1000,APARTMENT,APARTMENT,395000.0,2.0,102.0,HYPER_EQUIPPED,True,,True,6.0,,,UNKNOWN,,False,AS_NEW
-46,https://www.immoweb.be/en/classified/apartment/for-sale/saint-gilles/1060/10822125,Brussels,Brussels,Saint-Gilles,1060,APARTMENT,APARTMENT,295000.0,1.0,93.0,NOT_INSTALLED,False,,True,,,,UNKNOWN,2,False,TO_RENOVATE
-47,https://www.immoweb.be/en/classified/apartment/for-sale/schaerbeek/1030/10822124,Brussels,Brussels,Schaerbeek,1030,APARTMENT,APARTMENT,234000.0,2.0,93.0,0,True,,True,,,,UNKNOWN,2,,TO_BE_DONE_UP
-48,https://www.immoweb.be/en/classified/apartment/for-sale/edegem/2650/10822122,Flanders,Antwerp,Edegem,2650,APARTMENT,APARTMENT,319000.0,3.0,,HYPER_EQUIPPED,False,,,,,,,2,,AS_NEW
-49,https://www.immoweb.be/en/classified/house/for-sale/oudegem%20%28dendermonde%29/9200/10822119,Flanders,East Flanders,Oudegem (Dendermonde),9200,HOUSE,HOUSE,265000.0,2.0,119.0,,False,,,,True,32.0,133,2,False,GOOD
-50,https://www.immoweb.be/en/classified/bungalow/for-sale/zuiddorpe/4574%20PZ/10822118,,,Zuiddorpe,4574 PZ,HOUSE,BUNGALOW,399000.0,3.0,650.0,INSTALLED,,,True,1.0,True,1.0,605,4,False,GOOD
-51,https://www.immoweb.be/en/classified/apartment/for-sale/chimay/6460/10822116,Wallonie,Hainaut,Chimay,6460,APARTMENT,APARTMENT,349900.0,3.0,137.0,0,False,,True,7.0,,,UNKNOWN,2,,
-52,https://www.immoweb.be/en/classified/apartment/for-sale/chimay/6460/10822115,Wallonie,Hainaut,Chimay,6460,APARTMENT,APARTMENT,228800.0,1.0,78.0,0,False,,True,23.0,True,123.0,UNKNOWN,2,,
-53,https://www.immoweb.be/en/classified/apartment/for-sale/chimay/6460/10822114,Wallonie,Hainaut,Chimay,6460,APARTMENT,APARTMENT,294800.0,2.0,103.0,0,False,,True,19.0,True,127.0,UNKNOWN,2,,
-54,https://www.immoweb.be/en/classified/apartment/for-sale/chimay/6460/10822113,Wallonie,Hainaut,Chimay,6460,APARTMENT,APARTMENT,379900.0,3.0,133.0,0,False,,True,18.0,True,128.0,UNKNOWN,2,,
-55,https://www.immoweb.be/en/classified/apartment/for-sale/chimay/6460/10822112,Wallonie,Hainaut,Chimay,6460,APARTMENT,APARTMENT,334900.0,2.0,109.0,0,False,,True,22.0,True,125.0,UNKNOWN,2,,
-56,https://www.immoweb.be/en/classified/apartment/for-sale/chimay/6460/10822111,Wallonie,Hainaut,Chimay,6460,APARTMENT,APARTMENT,218800.0,1.0,75.0,0,False,,True,35.0,,,UNKNOWN,2,,
-57,https://www.immoweb.be/en/classified/apartment/for-sale/huy/4500/10822110,Wallonie,Liège,Huy,4500,APARTMENT,APARTMENT,275000.0,3.0,145.0,,False,,True,,,,UNKNOWN,4,False,GOOD
-58,https://www.immoweb.be/en/classified/apartment/for-sale/sint-niklaas/9100/10822109,Flanders,East Flanders,Sint-Niklaas,9100,APARTMENT,APARTMENT,225000.0,3.0,85.0,,False,,True,5.0,,,UNKNOWN,2,False,GOOD
-59,https://www.immoweb.be/en/classified/house/for-sale/ottenburg/3040/10822107,Flanders,Flemish Brabant,OTTENBURG,3040,HOUSE,HOUSE,595000.0,4.0,340.0,SEMI_EQUIPPED,,-1.0,,,,,1002,4,,
+0,https://www.immoweb.be/en/classified/house/for-sale/bertem/3060/10825503,Flanders,Flemish Brabant,Bertem,3060,HOUSE,HOUSE,298000.0,4.0,112.0,SEMI_EQUIPPED,False,,True,24.0,True,272.0,450,4,False,TO_BE_DONE_UP
+1,https://www.immoweb.be/en/classified/new-real-estate-project-houses/for-sale/geraardsbergen/9500/10825603,Flanders,East Flanders,Geraardsbergen,9500,HOUSE_GROUP,HOUSE_GROUP,,,,0,,,,,,,UNKNOWN,UNKNOWN,,UNKNOWN
+2,https://www.immoweb.be/en/classified/house/for-sale/roosdaal/1760/10825693,Flanders,Flemish Brabant,Roosdaal,1760,HOUSE,HOUSE,360000.0,3.0,301.0,SEMI_EQUIPPED,,,True,,,,545,3,False,GOOD
+3,https://www.immoweb.be/en/classified/new-real-estate-project-houses/for-sale/wetteren/9230/10824904,Flanders,East Flanders,Wetteren,9230,HOUSE_GROUP,HOUSE_GROUP,,,,0,,,,,,,UNKNOWN,UNKNOWN,,UNKNOWN
+4,https://www.immoweb.be/en/classified/new-real-estate-project-houses/for-sale/kontich/2550/10825327,Flanders,Antwerp,Kontich,2550,HOUSE_GROUP,HOUSE_GROUP,,,,0,,,,,,,UNKNOWN,UNKNOWN,,UNKNOWN
+5,https://www.immoweb.be/en/classified/new-real-estate-project-houses/for-sale/wuustwezel/2990/10825062,Flanders,Antwerp,Wuustwezel,2990,HOUSE_GROUP,HOUSE_GROUP,,,,0,,,,,,,UNKNOWN,UNKNOWN,,UNKNOWN
+6,https://www.immoweb.be/en/classified/house/for-sale/oupeye/4682/10823978,Wallonie,Liège,Oupeye,4682,HOUSE,HOUSE,149000.0,3.0,138.0,INSTALLED,False,,True,20.0,True,390.0,571,3,False,TO_RENOVATE
+7,https://www.immoweb.be/en/classified/house/for-sale/grace-hollogne/4460/10823979,Wallonie,Liège,Grace-Hollogne,4460,HOUSE,HOUSE,199000.0,3.0,133.0,INSTALLED,False,,True,65.0,True,470.0,583,2,False,GOOD
+8,https://www.immoweb.be/en/classified/house/for-sale/ronse/9600/10823777,Flanders,East Flanders,Ronse,9600,HOUSE,HOUSE,289000.0,3.0,156.0,INSTALLED,False,,,,True,350.0,555,3,False,GOOD
+9,https://www.immoweb.be/en/classified/house/for-sale/deurne/2100/10823722,Flanders,Antwerp,Deurne,2100,HOUSE,HOUSE,314000.0,3.0,151.0,SEMI_EQUIPPED,,-1.0,,,True,60.0,136,2,,GOOD
+10,https://www.immoweb.be/en/classified/new-real-estate-project-houses/for-sale/ronse/9600/10823693,Flanders,East Flanders,Ronse,9600,HOUSE_GROUP,HOUSE_GROUP,,,,0,,,,,,,UNKNOWN,UNKNOWN,,UNKNOWN
+11,https://www.immoweb.be/en/classified/house/for-sale/moha/4520/10824516,Wallonie,Liège,MOHA,4520,HOUSE,HOUSE,385000.0,7.0,350.0,INSTALLED,,-1.0,True,30.0,True,,1199,4,,GOOD
+12,https://www.immoweb.be/en/classified/new-real-estate-project-houses/for-sale/harelbeke/8530/10823300,Flanders,West Flanders,Harelbeke,8530,HOUSE_GROUP,HOUSE_GROUP,,,,0,,,,,,,UNKNOWN,UNKNOWN,,UNKNOWN
+13,https://www.immoweb.be/en/classified/house/for-sale/antwerp/2000/10776949,Flanders,Antwerp,Antwerp,2000,HOUSE,HOUSE,439900.0,2.0,160.0,INSTALLED,False,,True,13.0,,,48,2,False,AS_NEW
+14,https://www.immoweb.be/en/classified/house/for-sale/erpe-mere/9420/10823494,Flanders,East Flanders,Erpe-Mere,9420,HOUSE,HOUSE,498000.0,4.0,205.0,HYPER_EQUIPPED,,,True,,,,663,3,False,AS_NEW
+15,https://www.immoweb.be/en/classified/new-real-estate-project-houses/for-sale/gent%20gentbrugge/9050/10823676,Flanders,East Flanders,Gent Gentbrugge,9050,HOUSE_GROUP,HOUSE_GROUP,,,,0,,,,,,,UNKNOWN,UNKNOWN,,UNKNOWN
+16,https://www.immoweb.be/en/classified/house/for-sale/aalst/9300/10823496,Flanders,East Flanders,Aalst,9300,HOUSE,HOUSE,679000.0,5.0,370.0,HYPER_EQUIPPED,,,True,,,,961,4,False,AS_NEW
+17,https://www.immoweb.be/en/classified/house/for-sale/oupeye/4682/10821092,Wallonie,Liège,Oupeye,4682,HOUSE,HOUSE,199000.0,4.0,130.0,INSTALLED,False,,,,True,155.0,350,2,False,GOOD
+18,https://www.immoweb.be/en/classified/house/for-sale/geraardsbergen/9500/10821645,Flanders,East Flanders,Geraardsbergen,9500,HOUSE,HOUSE,237500.0,3.0,125.0,INSTALLED,,-1.0,,,,,58,2,,JUST_RENOVATED
+19,https://www.immoweb.be/en/classified/mixed-use-building/for-sale/herent/3020/10472547,Flanders,Flemish Brabant,Herent,3020,HOUSE,MIXED_USE_BUILDING,359000.0,4.0,348.0,INSTALLED,,-1.0,,,True,128.0,314,2,,GOOD
+20,https://www.immoweb.be/en/classified/house/for-sale/herent/3020/10472546,Flanders,Flemish Brabant,Herent,3020,HOUSE,HOUSE,359000.0,4.0,348.0,INSTALLED,,-1.0,,,True,128.0,314,2,,GOOD
+21,https://www.immoweb.be/en/classified/new-real-estate-project-houses/for-sale/deinze/9800/10820756,Flanders,East Flanders,Deinze,9800,HOUSE_GROUP,HOUSE_GROUP,,,,0,,,,,,,UNKNOWN,UNKNOWN,,UNKNOWN
+22,https://www.immoweb.be/en/classified/mansion/for-sale/nivelles/1400/10821550,Wallonie,Walloon Brabant,Nivelles,1400,HOUSE,MANSION,420000.0,5.0,250.0,INSTALLED,,,True,40.0,True,500.0,770,3,False,TO_RENOVATE
+23,https://www.immoweb.be/en/classified/mansion/for-sale/seneffe/7180/10821548,Wallonie,Hainaut,Seneffe,7180,HOUSE,MANSION,420000.0,5.0,250.0,INSTALLED,,,True,40.0,True,500.0,770,3,False,TO_RENOVATE
+24,https://www.immoweb.be/en/classified/new-real-estate-project-houses/for-sale/gent/9030/10820782,Flanders,East Flanders,Gent,9030,HOUSE_GROUP,HOUSE_GROUP,,,,0,,,,,,,UNKNOWN,UNKNOWN,,UNKNOWN
+25,https://www.immoweb.be/en/classified/new-real-estate-project-houses/for-sale/gent/9050/10820774,Flanders,East Flanders,Gent,9050,HOUSE_GROUP,HOUSE_GROUP,,,,0,,,,,,,UNKNOWN,UNKNOWN,,UNKNOWN
+26,https://www.immoweb.be/en/classified/new-real-estate-project-houses/for-sale/berlaar/2590/10820947,Flanders,Antwerp,Berlaar,2590,HOUSE_GROUP,HOUSE_GROUP,,,,0,,,,,,,UNKNOWN,UNKNOWN,,UNKNOWN
+27,https://www.immoweb.be/en/classified/mansion/for-sale/etterbeek/1040/10821898,Brussels,Brussels,Etterbeek,1040,HOUSE,MANSION,950000.0,5.0,280.0,HYPER_EQUIPPED,False,1.0,,,True,150.0,240,2,,AS_NEW
+28,https://www.immoweb.be/en/classified/house/for-sale/ronse/9600/10818318,Flanders,East Flanders,Ronse,9600,HOUSE,HOUSE,175000.0,4.0,236.0,INSTALLED,False,,,,True,75.0,200,2,False,TO_RENOVATE
+29,https://www.immoweb.be/en/classified/house/for-sale/vieux-waleffe/4530/10819654,Wallonie,Liège,VIEUX-WALEFFE,4530,HOUSE,HOUSE,299000.0,3.0,210.0,INSTALLED,,-1.0,True,90.0,True,,162,2,,AS_NEW
+30,https://www.immoweb.be/en/classified/house/for-sale/uccle/1180/10826762,Brussels,Brussels,Uccle,1180,HOUSE,HOUSE,530000.0,3.0,140.0,USA_HYPER_EQUIPPED,False,,True,9.0,True,41.0,123,2,False,AS_NEW
+31,https://www.immoweb.be/en/classified/apartment/for-sale/waregem/8790/10826760,Flanders,West Flanders,Waregem,8790,APARTMENT,APARTMENT,379000.0,2.0,,0,,,,,,,UNKNOWN,,,GOOD
+32,https://www.immoweb.be/en/classified/apartment/for-sale/herenthout/2270/10826759,Flanders,Antwerp,Herenthout,2270,APARTMENT,APARTMENT,319000.0,2.0,136.0,INSTALLED,False,,True,36.0,,,UNKNOWN,2,False,GOOD
+33,https://www.immoweb.be/en/classified/apartment/for-sale/brugge/8200/10623928,Flanders,West Flanders,Brugge,8200,APARTMENT,APARTMENT,350000.0,3.0,129.0,0,,,,,,,UNKNOWN,,,GOOD
+34,https://www.immoweb.be/en/classified/villa/for-sale/charleroi%20jumet/6040/10826758,Wallonie,Hainaut,Charleroi Jumet,6040,HOUSE,VILLA,390000.0,6.0,260.0,INSTALLED,,,True,50.0,True,1500.0,1600,4,,AS_NEW
+35,https://www.immoweb.be/en/classified/house/for-sale/olsene/9870/10826752,Flanders,East Flanders,Olsene,9870,HOUSE,HOUSE,199000.0,4.0,174.0,0,False,,,,,,215,3,False,TO_RENOVATE
+36,https://www.immoweb.be/en/classified/house/for-sale/roeselare/8800/10826745,Flanders,West Flanders,Roeselare,8800,HOUSE,HOUSE,139000.0,3.0,143.0,SEMI_EQUIPPED,False,,True,,,,136,2,,TO_BE_DONE_UP
+37,https://www.immoweb.be/en/classified/house/for-sale/beveren%20leie/8791/10826744,Flanders,West Flanders,Beveren Leie,8791,HOUSE,HOUSE,135912.0,3.0,137.0,0,False,,,,,,283,2,False,TO_RENOVATE
+38,https://www.immoweb.be/en/classified/house/for-sale/thuin/6530/10826743,Wallonie,Hainaut,Thuin,6530,HOUSE,HOUSE,142500.0,4.0,154.0,INSTALLED,False,,,,,,102,4,,
+39,https://www.immoweb.be/en/classified/house/for-sale/aywaille/4920/10826742,Wallonie,Liège,Aywaille,4920,HOUSE,HOUSE,435000.0,4.0,153.0,INSTALLED,False,,True,,,,5630,4,,
+40,https://www.immoweb.be/en/classified/house/for-sale/de%20haan/8420/10826741,Flanders,West Flanders,De Haan,8420,HOUSE,HOUSE,525000.0,5.0,500.0,0,False,,,,,,900,2,False,TO_RENOVATE
+41,https://www.immoweb.be/en/classified/house/for-sale/vinalmont/4520/10826740,Wallonie,Liège,VINALMONT,4520,HOUSE,HOUSE,299000.0,3.0,166.0,0,,-1.0,True,,True,,1580,4,,GOOD
+42,https://www.immoweb.be/en/classified/villa/for-sale/begijnendijk/3130/10826738,Flanders,Flemish Brabant,Begijnendijk,3130,HOUSE,VILLA,595000.0,3.0,,0,False,1.0,True,,,,1700,,False,GOOD
+43,https://www.immoweb.be/en/classified/house/for-sale/wielsbeke/8710/10826734,Flanders,West Flanders,Wielsbeke,8710,HOUSE,HOUSE,345000.0,4.0,224.0,INSTALLED,False,,,,,,312,2,False,GOOD
+44,https://www.immoweb.be/en/classified/flat-studio/for-sale/middelkerke/8430/10826724,Flanders,West Flanders,Middelkerke,8430,APARTMENT,FLAT_STUDIO,139000.0,0.0,30.0,INSTALLED,False,,True,2.0,,,,2,False,AS_NEW
+45,https://www.immoweb.be/en/classified/apartment/for-sale/middelkerke/8430/10826723,Flanders,West Flanders,Middelkerke,8430,APARTMENT,APARTMENT,274000.0,1.0,51.0,INSTALLED,False,,True,6.0,,,,2,False,AS_NEW
+46,https://www.immoweb.be/en/classified/house/for-sale/heist-aan-zee/8301/10826722,Flanders,West Flanders,Heist-aan-Zee,8301,HOUSE,HOUSE,375000.0,3.0,187.0,HYPER_EQUIPPED,False,,True,6.0,True,103.0,215,2,False,TO_BE_DONE_UP
+47,https://www.immoweb.be/en/classified/penthouse/for-sale/hoogstraten/2320/10826720,Flanders,Antwerp,Hoogstraten,2320,APARTMENT,PENTHOUSE,685000.0,3.0,164.0,INSTALLED,False,,True,43.0,,,UNKNOWN,4,False,GOOD
+48,https://www.immoweb.be/en/classified/house/for-sale/diksmuide/8600/10825925,Flanders,West Flanders,Diksmuide,8600,HOUSE,HOUSE,225000.0,4.0,195.0,0,False,,,,,,321,2,False,TO_RENOVATE
+49,https://www.immoweb.be/en/classified/apartment/for-sale/wilrijk/2610/10826718,Flanders,Antwerp,Wilrijk,2610,APARTMENT,APARTMENT,298000.0,3.0,105.0,HYPER_EQUIPPED,False,,True,,,,,4,False,AS_NEW
+50,https://www.immoweb.be/en/classified/house/for-sale/zele/9240/10826717,Flanders,East Flanders,Zele,9240,HOUSE,HOUSE,245000.0,4.0,143.0,,False,,True,10.0,,,347,3,False,TO_RENOVATE
+51,https://www.immoweb.be/en/classified/ground-floor/for-sale/wolvertem/1861/10826715,Flanders,Flemish Brabant,Wolvertem,1861,APARTMENT,GROUND_FLOOR,354000.0,3.0,129.0,0,False,,,,,,,4,False,GOOD
+52,https://www.immoweb.be/en/classified/apartment/for-sale/wenduine/8420/10826713,Flanders,West Flanders,Wenduine,8420,APARTMENT,APARTMENT,125000.0,0.0,40.0,0,False,,,,,,UNKNOWN,2,False,TO_RENOVATE
+53,https://www.immoweb.be/en/classified/apartment/for-sale/dendermonde/9200/10826710,Flanders,East Flanders,Dendermonde,9200,APARTMENT,APARTMENT,460000.0,4.0,200.0,,False,,,,True,203.0,UNKNOWN,2,False,TO_BE_DONE_UP
+54,https://www.immoweb.be/en/classified/house/for-sale/schaerbeek/1030/10826709,Brussels,Brussels,Schaerbeek,1030,HOUSE,HOUSE,349000.0,5.0,171.0,INSTALLED,False,,,,True,22.0,0,4,,
+55,https://www.immoweb.be/en/classified/house/for-sale/waterloo/1410/10826707,Wallonie,Walloon Brabant,Waterloo,1410,HOUSE,HOUSE,715000.0,4.0,200.0,HYPER_EQUIPPED,False,1.0,True,,True,,1488,3,,AS_NEW
+56,https://www.immoweb.be/en/classified/house/for-sale/wenduine/8420/10826706,Flanders,West Flanders,Wenduine,8420,HOUSE,HOUSE,149000.0,2.0,112.0,0,False,,,,,,127,2,False,TO_RENOVATE
+57,https://www.immoweb.be/en/classified/house/for-sale/li%C3%A8ge/4031/10826704,Wallonie,Liège,Liège,4031,HOUSE,HOUSE,249000.0,1.0,95.0,INSTALLED,,-1.0,,,True,93.0,149,2,,JUST_RENOVATED
+58,https://www.immoweb.be/en/classified/house/for-sale/tervuren/3080/10826696,Flanders,Flemish Brabant,Tervuren,3080,HOUSE,HOUSE,470000.0,3.0,151.0,,False,,,,,,570,4,False,
+59,https://www.immoweb.be/en/classified/apartment/for-sale/lier/2500/10826689,Flanders,Antwerp,Lier,2500,APARTMENT,APARTMENT,425000.0,3.0,159.0,INSTALLED,,-1.0,True,,,,,2,,GOOD
