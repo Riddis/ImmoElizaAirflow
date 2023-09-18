@@ -5,6 +5,7 @@ import src.get_dataset as get_dataset
 import src.visual_cleanup as visual_cleanup
 import src.model_cleanup as model_cleanup
 import src.trainmodel as trainmodel
+import src.streamlit as streamlit
 from pathlib import Path
 
 default_args = {
@@ -12,15 +13,6 @@ default_args = {
     'retries': 5, 
     'retry_delay': timedelta(minutes=2)
 }
-
-# Build path to file
-# Selects current working directory
-cwd = Path.cwd()
-csv_path = 'dags/data/dataframe.csv'
-url_path = 'dags/data/full_list.txt'
-csv_path = (cwd / csv_path).resolve()
-url_path = (cwd / url_path).resolve()
-counters = 1
 
 with DAG(
     dag_id='ImmoEliza', 
@@ -49,5 +41,10 @@ with DAG(
         python_callable=trainmodel.train
     )
 
-    task1>>task2
-    task1>>task3>>task4
+    task5 = PythonOperator(
+        task_id='streamlit',
+        python_callable=streamlit.stream
+    )
+
+    task1>>task2>>task5
+    task1>>task3>>task4>>task5
