@@ -56,7 +56,7 @@ If required, you can run the following code in your Ubuntu terminal to check it'
 
 The workflow has 5 tasks:
 
-![Schema](./assets/DAG.NG)
+![Schema](./assets/DAG.PNG)
 
 - Scrape every night all the apartments/houses on sale. (Workflow currently scrapes a limited amount to prevent extreme waiting times)
 - Preprocess the data for visualization.
