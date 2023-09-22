@@ -1,13 +1,14 @@
 import pandas as pd
 import numpy as np
 from pathlib import Path
-import re
+import datetime
 
 def build_path():
     """Builds path to csv locations"""
     cwd = Path.cwd()
-    csv_path = 'dags/data/dataframe.csv'
-    csv_cleaned_path = 'dags/data/dataframe_cleaned_visual.csv'
+    date = datetime.date.today()
+    csv_path = f'dags/data/dataframe_{date}.csv'
+    csv_cleaned_path = f'dags/data/dataframe_cleaned_visual_{date}.csv'
     src_path = (cwd / csv_path).resolve()
     out_path = (cwd / csv_cleaned_path).resolve()
 

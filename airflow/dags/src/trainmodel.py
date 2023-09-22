@@ -5,7 +5,7 @@ from pathlib import Path
 import joblib
 import numpy as np
 import pandas as pd
-
+import datetime
 
 def prep_data(csv):
     """Select which columns to use as features, split the dataset, and scale it"""
@@ -35,7 +35,8 @@ def train_XGBRegressor(X_train, y_train):
 def build_path():
     """Builds path to csv locations"""
     cwd = Path.cwd()
-    csv_cleaned_path = 'dags/data/dataframe_cleaned_model.csv'
+    date = datetime.date.today()
+    csv_cleaned_path = f'dags/data/dataframe_cleaned_model_{date}.csv'
     src_path = (cwd / csv_cleaned_path).resolve()
 
     return src_path
@@ -51,8 +52,9 @@ def train():
     csv = get_csv(src_path)
     X_train, X_test, y_train, y_test, y, scaler, encoder = prep_data(csv)
     regressor = train_XGBRegressor(X_train, y_train)
-    regressor.save_model('dags/models/xgbmodel.model')
-    scaler_filename = "dags/models/scaler.save"
+    date = datetime.date.today()
+    regressor.save_model(f'dags/models/xgbmodel_{date}.model')
+    scaler_filename = f"dags/models/scaler_{date}.save"
     joblib.dump(scaler, scaler_filename) 
-    encoder_filename = "dags/models/encoder.save"
+    encoder_filename = f"dags/models/encoder_{date}.save"
     joblib.dump(encoder, encoder_filename)

@@ -1,11 +1,12 @@
 from datetime import datetime, timedelta
 from airflow import DAG
 from airflow.operators.python import PythonOperator
+from airflow.operators.bash import BashOperator
 import src.get_dataset as get_dataset
 import src.visual_cleanup as visual_cleanup
 import src.model_cleanup as model_cleanup
 import src.trainmodel as trainmodel
-import src.streamlit as streamlit
+import src.webapp as app
 from pathlib import Path
 
 default_args = {
@@ -41,9 +42,9 @@ with DAG(
         python_callable=trainmodel.train
     )
 
-    task5 = PythonOperator(
+    task5 = BashOperator(
         task_id='streamlit',
-        python_callable=streamlit.stream
+        bash_command='streamlit run /mnt/c/users/ridd/documents/repos/immoelizaairflow/airflow/dags/src/webapp.py'
     )
 
     task1>>task2>>task5

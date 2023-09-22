@@ -9,6 +9,7 @@ import sys
 import threading
 import os
 from pathlib import Path
+import datetime
 
 
 # Function to scrape URLs
@@ -237,8 +238,9 @@ def create_dataframe(csv_path, url_path, counters):
 
 def fetch():
     cwd = Path.cwd()
-    csv_path = 'dags/data/dataframe.csv'
-    url_path = 'dags/data/full_list.txt'
+    date = datetime.date.today()
+    csv_path = f'dags/data/dataframe_{date}.csv'
+    url_path = f'dags/data/full_list_{date}.txt'
     csv_path = (cwd / csv_path).resolve()
     url_path = (cwd / url_path).resolve()
     counters = 1
